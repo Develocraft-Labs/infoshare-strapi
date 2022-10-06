@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "category_movies",
+  "info": {
+    "singularName": "category-movie",
+    "pluralName": "category-movies",
+    "displayName": "CategoryMovie"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "Movie": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::movie.movie"
+    }
+  }
+}

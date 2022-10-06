@@ -4,15 +4,29 @@
   "info": {
     "singularName": "movie",
     "pluralName": "movies",
-    "displayName": "movie"
+    "displayName": "Movie",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
     "Title": {
       "type": "string"
+    },
+    "SmallImagePath": {
+      "type": "string",
+      "required": true
+    },
+    "BigImagePath": {
+      "type": "string",
+      "required": true
+    },
+    "Slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   }
 }
